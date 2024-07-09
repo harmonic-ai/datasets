@@ -1,2 +1,2 @@
 # Harmonic Datasets
-Our updates and improvements to MiniF2F coming soon...
+We'll release datasets and other interesting problems here!
