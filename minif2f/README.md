@@ -7,12 +7,11 @@ We have released our validation set, which was used to obtain the results report
 To accurately assess our system's capabilities, we have made several improvements to MiniF2F:
 
 1. We translated the problem statements to Lean 4, the leading system for formal mathematics today.
-2. We re-split the 488 problems uniformly randomly into a training set of 392 problems, a validation set of 48 problems, and a test set of 48 problems. The new test set is an unbiased random subset of the original test set. The val and train sets are random subsets of the complement of the new test set, in the union of the previous val and test sets.
-
+2. We re-split the 488 problems uniformly randomly into a training set of 392 problems, a validation set of 48 problems, and a test set of 48 problems. The new test set and val set are an unbiased random subset of the original test set. The train set is the remaining problems from the original benchmark.
 3. We ensured that each formal statement is associated with an accurate natural-language statement, allowing us to evaluate autoformalization capabilities.
 4. We fixed many incorrect formalizations, including several theorem statements that became trivial or impossible in their original Lean encodings.
 
-Our work builds upon We began with formal statements released by the [Hoskinson Center](https://huggingface.co/datasets/hoskinson-center/minif2f-lean4), themselves derived from [Facebook Research’s fork](https://github.com/facebookresearch/miniF2F) which fixed several issues with the [original benchmark](https://github.com/openai/miniF2).
+We began with formal statements released by the [Hoskinson Center](https://huggingface.co/datasets/hoskinson-center/minif2f-lean4), themselves derived from [Facebook Research’s fork](https://github.com/facebookresearch/miniF2F) which fixed several issues with the [original benchmark](https://github.com/openai/miniF2).
 
 ## MiniF2F
 
