@@ -15,11 +15,7 @@ Our work builds upon We began with formal statements released by the [Hoskinson 
 
 ## MiniF2F
 
-MiniF2F is a formal mathematics benchmark (translated across multiple formal systems) consisting of exercise statements from olympiads (AMC, AIME, IMO) as well as high-school and undergraduate maths classes.
-
-The goal of the project is to provide a shared benchmark to evaluate and directly compare automated theorem proving systems based on the formal systems targeted, initially **Lean**, and **Metamath** (targeting also **Hol Light** and **Isabelle**).
-
-The benchmark (released under permissive licenses (MIT for Metamath, Apache for Lean)) is a work in progress and contributions are welcome and encouraged through pull requests.
+The original version of (MiniF2F from OpenAI)[ https://github.com/openai/miniF2F] provides more context on the original benchmark.
 
 ### Citation
 
