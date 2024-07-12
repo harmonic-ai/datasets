@@ -1,0 +1,290 @@
+[
+  {
+    "id": "formal_3241",
+    "natural": "Show that the following statement is false: For all $a$ and $b$,  $a$ and $b$ are both even iff $8 \\mid a^2 + b^2$.",
+    "formal": "theorem formal_3241 : ¬ (∀ a b : ℤ, (Even a ∧ Even b) ↔ 8 ∣ a^2 + b^2) := by\n  sorry",
+    "name": "numbertheory_notequiv2i2jasqbsqdiv8"
+  },
+  {
+    "id": "formal_3336",
+    "natural": "The sum of the two 5-digit numbers $AMC10$ and $AMC12$ is $123422$. Show that $A+M+C = 14$.",
+    "formal": "theorem formal_3336\n  (A M C : ℕ)\n  (h₀ : A < 10)\n  (h₁ : M < 10)\n  (h₂ : C < 10)\n  (h₃ : 0 < A)\n  (h₄ : Nat.ofDigits 10 [0, 1, C, M, A] + Nat.ofDigits 10 [2, 1, C, M, A] = 123422) :\n  A + M + C = 14 := by\n  sorry",
+    "name": "amc12a_2003_p5"
+  },
+  {
+    "id": "formal_2952",
+    "natural": "Show that there are no integers $x$ and $y$ such that $4x^3 - 7y^3 = 2003$.",
+    "formal": "theorem formal_2952 :\n  ¬ ∃ (x y : ℤ), 4 * x^3 - 7 * y^3 = 2003 := by\n  sorry",
+    "name": "numbertheory_4x3m7y3neq2003"
+  },
+  {
+    "id": "formal_7436",
+    "natural": "The product of two consecutive positive even integers is 288. Show that the greater of the two integers is 18.",
+    "formal": "theorem formal_7436\n  (n : ℕ)\n  (hpos : n > 0)\n  (hn : Even n)\n  (h : n * (n + 2) = 288) :\n  n + 2 = 18 := by\n  sorry",
+    "name": "mathd_numbertheory_521"
+  },
+  {
+    "id": "formal_3195",
+    "natural": "The product of two positive whole numbers is 2005. If neither number is 1, show that the sum of the two numbers is 406.",
+    "formal": "theorem formal_3195\n  (a b : ℕ)\n  (h₀ : 0 < a)\n  (h₁ : 0 < b)\n  (h₂ : a * b = 2005)\n  (h₃ : a ≠ 1)\n  (h₄ : b ≠ 1) :\n  a + b = 406 := by\n  sorry",
+    "name": "mathd_numbertheory_541"
+  },
+  {
+    "id": "formal_3376",
+    "natural": "Show that $29^{13} - 5^{13} \\equiv 3 \\pmod{7}$.",
+    "formal": "theorem formal_3376 : (29^13 - 5^13) ≡ 3 [ZMOD 7] := by sorry",
+    "name": "mathd_numbertheory_728"
+  },
+  {
+    "id": "formal_3432",
+    "natural": "Show that for any real number $x$ and any natural number $n$, if $x > -1$, then $(1+nx)\\leq (1+x)^n$.",
+    "formal": "theorem formal_3432\n  (x : ℝ)\n  (hx : -1 < x) :\n  ∀ n : ℕ, (1 + n * x) ≤ (1 + x)^n := by\n  sorry",
+    "name": "induction_1pxpownlt1pnx"
+  },
+  {
+    "id": "formal_3059",
+    "natural": "Show that $\\log_{3}{27} = 3$.",
+    "formal": "theorem formal_3059 : Real.logb 3 27 = 3 := by\n  sorry",
+    "name": "mathd_algebra_484"
+  },
+  {
+    "id": "formal_3417",
+    "natural": "If $a$ and $b$ are real numbers, $a^2b^3=\\frac{32}{27}$, and $\\frac{a}{b^3}=\\frac{27}{4}$, show that $a+b = \\frac{8}{3}$.",
+    "formal": "theorem formal_3417\n  (a b : ℝ)\n  (h₀ : a^2 * b^3 = 32 / 27)\n  (h₁ : a / b^3 = 27 / 4) :\n  a + b = 8 / 3 := by\n  sorry",
+    "name": "mathd_algebra_362"
+  },
+  {
+    "id": "formal_7435",
+    "natural": "Suppose that  $4^{a}=5$, $5^{b}=6$, $6^{c}=7$, and  $7^{d}=8$. Show that $abcd=\\frac{3}{2}$.",
+    "formal": "theorem formal_7435\n  (a b c d : ℝ)\n  (h₁ : ((4:ℝ)^a) = 5)\n  (h₂ : ((5:ℝ)^b) = 6)\n  (h₃ : ((6:ℝ)^c) = 7)\n  (h₄ : ((7:ℝ)^d) = 8) :\n  a * b * c * d = 3 / 2 := by\n  sorry",
+    "name": "mathd_algebra_598"
+  },
+  {
+    "id": "formal_2968",
+    "natural": "Let $a,b,c,d$ be odd integers such that $0<a<b<c<d$ and $ad=bc$. Prove that if $a+d=2^k$ and $b+c=2^m$ for some integers $k$ and $m$, then $a=1$.",
+    "formal": "theorem formal_2968\n  (a b c d k m : ℕ)\n  (h₂ : 0 < a)\n  (h₃ : a < b)\n  (h₄ : b < c)\n  (h₅ : c < d)\n  (h₆ : Odd a)\n  (h₇ : Odd b)\n  (h₈ : Odd c)\n  (h₉ : Odd d)\n  (h₁₀ : a * d = b * c)\n  (h₁₁ : a + d = 2^k)\n  (h₁₂ : b + c = 2^m) :\n  a = 1 := by\n  sorry",
+    "name": "imo_1984_p6"
+  },
+  {
+    "id": "formal_2984",
+    "natural": "The Fibonacci sequence is the sequence 1, 1, 2, 3, 5, $\\ldots$ where each term is the sum of the previous two terms. Show that the remainder is 3 when the 100th term of the sequence is divided by 4.",
+    "formal": "theorem formal_2984 : Nat.fib 100 % 4 = 3 := by\n  sorry",
+    "name": "mathd_numbertheory_483"
+  },
+  {
+    "id": "formal_2929",
+    "natural": "Show that the number of integers in the solution set of $|x-2| \\leq 5.6$ is 11.",
+    "formal": "theorem formal_2929 :\n  Set.ncard {x : ℤ | abs (x - 2) ≤ (5.6 : ℝ)} = 11 := by\n  sorry",
+    "name": "mathd_algebra_170"
+  },
+  {
+    "id": "formal_7430",
+    "natural": "Show $x^2 - 14x + 3$ obtains its minimum value when $x=7$.",
+    "formal": "theorem formal_7430 (f : ℝ → ℝ) (hf : ∀ x, f x = x^2 - 14 * x + 3) (x : ℝ) :\n  f 7 ≤ f x := by\n  sorry",
+    "name": "mathd_algebra_113"
+  },
+  {
+    "id": "formal_2975",
+    "natural": "Show that $24^{-1} \\equiv 116 \\pmod{11^2}$. That is, show that $24 \\cdot 116 \\equiv 1\\pmod{11^2}$.",
+    "formal": "theorem formal_2975 : 24 * 116 % 11^2 = 1 := by\n  sorry",
+    "name": "mathd_numbertheory_233"
+  },
+  {
+    "id": "formal_7437",
+    "natural": "Let $f$ be a function defined on the set of positive rational numbers with the property that $f(a \\cdot b)=f(a)+f(b)$ for all positive rational numbers $a$ and $b$. Suppose that $f$ also has the property that $f(p)=p$ for every prime number $p$. Show that $f(\\frac{25}{11})<0$.",
+    "formal": "theorem formal_7437\n  (f : ℚ → ℝ)\n  (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) = f x + f y)\n  (h₁ : ∀ p, Nat.Prime p → f p = p) :\n  f (25 / 11) < 0 := by\n  sorry",
+    "name": "amc12a_2021_p18"
+  },
+  {
+    "id": "formal_2911",
+    "natural": "Let $a$ and $b$ be real numbers such that $a^2+b^2=1$. Show that $ab+\\lvert a-b\\rvert \\leq 1$.",
+    "formal": "theorem formal_2911\n  (a b : ℝ)\n  (h₀ : a^2 + b^2 = 1) :\n  a * b + abs (a - b) ≤ 1 := by\n  sorry",
+    "name": "algebra_sqineq_unitcircatbpabsamblt1"
+  },
+  {
+    "id": "formal_2835",
+    "natural": "Show that the units digit of $16^{17} \\times 17^{18} \\times 18^{19}$ is $8$.",
+    "formal": "theorem formal_2835 : (16^17 * 17^18 * 18^19) % 10 = 8 := by\n  sorry",
+    "name": "mathd_numbertheory_212"
+  },
+  {
+    "id": "formal_2850",
+    "natural": "Show that for any natural number $n$, 12 divides $4^{n+1} + 20$.",
+    "formal": "theorem formal_2850\n  (n : ℕ) :\n  12 ∣ 4^(n + 1) + 20 := by sorry",
+    "name": "induction_12dvd4expnp1p20"
+  },
+  {
+    "id": "formal_3278",
+    "natural": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.",
+    "formal": "theorem formal_3278\n  (x y z : ℝ)\n  (hx : 0 < x)\n  (hy : 0 < y)\n  (hz : 0 < z) :\n  9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x) := by\n  sorry",
+    "name": "algebra_9onxpypzleqsum2onxpy"
+  },
+  {
+    "id": "formal_3410",
+    "natural": "A positive integer $X$ is 2 more than a multiple of 3. Its units digit is the same as the units digit of a number that is 4 more than a multiple of 5. Show that the smallest possible value of $X$ is 14.",
+    "formal": "theorem formal_3410 :\n  IsLeast {x : ℕ | 0 < x ∧ x % 3 = 2 ∧ ∃ y : ℕ, y % 5 = 4 ∧ x % 10 = y % 10} 14 := by\n  sorry",
+    "name": "mathd_numbertheory_559"
+  },
+  {
+    "id": "formal_3421",
+    "natural": "Suppose $2+\\frac{1}{1+\\frac{1}{2+\\frac{2}{3+x}}}=\\frac{144}{53}$. Show that $x=\\frac{3}{4}$.",
+    "formal": "theorem formal_3421\n  (x : ℝ)\n  (h : 2 + 1 / (1 + 1 / (2 + 2 / (3 + x))) = 144 / 53) :\n  x = 3 / 4 := by\n  sorry",
+    "name": "amc12b_2021_p3"
+  },
+  {
+    "id": "formal_7434",
+    "natural": "If $2x = 5y$ and $7y = 10z$, show that the value of $\\frac{z}{x}$ expressed as a common fraction is $\\frac{7}{25}$.",
+    "formal": "theorem formal_7434\n (x y z : ℝ)\n (h₀ : x ≠ 0)\n (h₁ : 2 * x = 5 * y)\n (h₂ : 7 * y = 10 * z) :\n z / x = 7 / 25 := by sorry",
+    "name": "mathd_algebra_33"
+  },
+  {
+    "id": "formal_3283",
+    "natural": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.",
+    "formal": "theorem formal_3283\n  (f z : ℝ)\n  (h₀ : f + 3 * z = 11)\n  (h₁ : 3 * (f - 1) - 5 * z = -68) :\n  f = -10 ∧ z = 7 := by\n  sorry",
+    "name": "algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7"
+  },
+  {
+    "id": "formal_3253",
+    "natural": "Show that there exist real numbers $a$ and $b$ such that $a$ is irrational, $b$ is irrational, and $a^b$ is rational.",
+    "formal": "theorem formal_3253 :\n  ∃ (a b : ℝ), 0 < a ∧ Irrational a ∧ Irrational b ∧ ¬Irrational (a^b) := by\n  sorry",
+    "name": "algebra_others_exirrpowirrrat"
+  },
+  {
+    "id": "formal_3295",
+    "natural": "Let $f(x) = 2x-3$ and $g(x) = x+1$. Show that the value of $g(f(5)-1)$ is $7$.",
+    "formal": "theorem formal_3295\n  (f g : ℝ → ℝ)\n  (hf : f = fun x => 2 * x - 3)\n  (hg : g = fun x => x + 1) :\n  g (f 5 - 1) = 7 := by\n  sorry",
+    "name": "mathd_algebra_346"
+  },
+  {
+    "id": "formal_3119",
+    "natural": "Show that the sum of the final three digits of the integer representation of $5^{100}$ is 13.",
+    "formal": "theorem formal_3119 : ((Nat.digits 10 (5^100)).take 3).sum = 13 := by\n  sorry",
+    "name": "mathd_numbertheory_341"
+  },
+  {
+    "id": "formal_7427",
+    "natural": "For what values of the variable $x$ does the following inequality hold:\n\n$$\\dfrac{4x^2}{(1 - \\sqrt {2x + 1})^2} < 2x + 9 \\ ?$$\nShow that the answer is $-\\frac{1}{2} \\le x<\\frac{45}{8}$, except $x=0$.",
+    "formal": "theorem formal_7427 (x : ℝ) : (4 * x^2 / (1 - Real.sqrt (2 * x + 1))^2 < 2 * x + 9 ∧ 0 ≤ 2 * x + 1 ∧ 1 - Real.sqrt (2 * x + 1) ≠ 0) ↔ (-1 / 2 ≤ x ∧ x < 45 / 8 ∧ x ≠ 0) := by\n  sorry",
+    "name": "imo_1960_p2"
+  },
+  {
+    "id": "formal_3237",
+    "natural": "Show that the number of solutions for the equation $\\tan(2x)=\\cos(\\tfrac{x}{2})$ on the interval $[0,2\\pi]$ is 5.",
+    "formal": "theorem formal_3237 :\n  Set.ncard {x : ℝ | x ∈ Set.Icc 0 (2 * Real.pi) ∧ Real.tan (2 * x) = Real.cos (x / 2)} = 5 := by\n  sorry",
+    "name": "amc12a_2020_p9"
+  },
+  {
+    "id": "formal_2964",
+    "natural": "Let $a$ be a positive real number and $f$ be a real function such that $\\forall x \\in \\mathbb{R}, f(x+a)=\\frac{1}{2}+\\sqrt{f(x)-f(x)^2}$.\nShow that there exists a positive real number $b$ such that $\\forall x \\in \\mathbb{R}, f(x+b)=f(x)$.",
+    "formal": "theorem formal_2964\n  (a : ℝ)\n  (f : ℝ → ℝ)\n  (h₀ : 0 < a)\n  (h₁ : ∀ x, f x - (f x)^2 ≥ 0 ∧ f (x + a) = 1 / 2 + Real.sqrt (f x - (f x)^2)) :\n  ∃ b : ℝ, 0 < b ∧ ∀ x, f (x + b) = f x := by\n  sorry",
+    "name": "imo_1968_p5_1"
+  },
+  {
+    "id": "formal_3233",
+    "natural": "Show that the product of the real roots of the equation $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$ is 20.",
+    "formal": "theorem formal_3233\n  (roots : Set ℝ)\n  (h₀ : roots = {x | x^2 + 18 * x + 30 = 2 * Real.sqrt (x^2 + 18 * x + 45)}) :\n  ∏ᶠ x ∈ roots, x = 20 := by\n  sorry",
+    "name": "aime_1983_p3"
+  },
+  {
+    "id": "formal_7433",
+    "natural": "Find $y$: $\\sqrt{19+3y} = 7$. Show that the answer is $y = 10$.",
+    "formal": "theorem formal_7433\n  (y : ℝ) :\n  (0 ≤ 19 * 3 * y ∧ Real.sqrt (19 + 3 * y) = 7) ↔ y = 10 := by\n  sorry",
+    "name": "mathd_algebra_263"
+  },
+  {
+    "id": "formal_2998",
+    "natural": "Ms. Blackwell gives an exam to two classes. The mean of the scores of the students in the morning class is $84$, and the afternoon class's mean score is $70$. The ratio of the number of students in the morning class to the number of students in the afternoon class is $\\frac{3}{4}$. Show that the mean of the scores of all the students is 76.",
+    "formal": "theorem formal_2998\n  (morning_mean afternoon_mean : ℝ)\n  (morning_students afternoon_students : ℕ)\n  (h₀ : morning_students ≠ 0)\n  (h₁ : afternoon_students ≠ 0)\n  (h₂ : morning_mean = 84)\n  (h₃ : afternoon_mean = 70)\n  (h₄ : morning_students * 4 = afternoon_students * 3) :\n  (morning_students * morning_mean + afternoon_students * afternoon_mean) / (morning_students + afternoon_students) = 76 := by\n  sorry",
+    "name": "amc12b_2021_p4"
+  },
+  {
+    "id": "formal_7429",
+    "natural": "Let $a_0, a_1, \\cdots, a_{n-1}$ be real constants, $x$ a real variable, and $f(x)=\\cos(a_0+x)+\\frac{1}{2}\\cos(a_1+x)+\\frac{1}{4}\\cos(a_2+x)+\\cdots+\\frac{1}{2^{n-1}}\\cos(a_{n-1}+x)$. For real numbers $x_1, x_2$, given that $f(x_1)=f(x_2)=0$, prove that $x_2-x_1=m\\pi$ for some integer $m$.",
+    "formal": "theorem formal_7429\n (x₁ x₂ : ℝ)\n (n : ℕ)\n (a : ℕ → ℝ)\n (f : ℝ → ℝ)\n (h₀ : 0 < n)\n (h₁ : ∀ (x : ℝ), f x = ∑ i in Finset.range n, ((Real.cos (a i + x)) / (2^i)))\n (h₂ : f x₁ = 0)\n (h₃ : f x₂ = 0) :\n ∃ (m : ℤ), x₂ - x₁ = m * (π : ℝ) := by\n sorry",
+    "name": "imo_1969_p2"
+  },
+  {
+    "id": "formal_7431",
+    "natural": "Because of redistricting, Liberty Middle School's enrollment increased to 598 students. This is an increase of $4\\%$ over last year's enrollment. Show that last year's enrollment was 575 students.",
+    "formal": "theorem formal_7431 \n  (last_year this_year : ℕ)\n  (h₀ : this_year = 598)\n  (h₁ : this_year = (1 + 4 / 100 : ℝ) * last_year) :\n  last_year = 575 := by\n  sorry",
+    "name": "mathd_algebra_137"
+  },
+  {
+    "id": "formal_2940",
+    "natural": "The volume of a cone is given by the formula $V = \\frac{1}{3}Bh$, where $B$ is the area of the base and $h$ is the height. The area of the base of a cone is 30 square units, and its height is 6.5 units. Show that the number of cubic units in its volume is 65.",
+    "formal": "theorem formal_2940\n  (B h V : ℝ)\n  (hB : B = 30)\n  (hh : h = 6.5)\n  (hV : V = B * h / 3) :\n  V = 65 := by\n  sorry",
+    "name": "mathd_algebra_478"
+  },
+  {
+    "id": "formal_3188",
+    "natural": "Show that for any positive integer $n$, we have $\\prod_{k=1}^n (1 + 1/k^3) \\leq 3 - 1/n$.",
+    "formal": "theorem formal_3188\n  (n : ℕ)\n  (h₀ : 0 < n) :\n  ∏ k in Finset.range n, (1 + 1 / (k + 1)^3 : ℝ) ≤ 3 - 1 / n := by\n  sorry",
+    "name": "induction_prod1p1onk3le3m1onn"
+  },
+  {
+    "id": "formal_3041",
+    "natural": "Show that the number of integers between 15 and 85 that are divisible by 20 is 4.",
+    "formal": "theorem formal_3041 : ((Finset.Ioo 15 85).filter (fun x => 20 ∣ x)).card = 4 := by\n  sorry",
+    "name": "mathd_numbertheory_12"
+  },
+  {
+    "id": "formal_2989",
+    "natural": "Show that for any real numbers $a$ and $b$, $\\frac{|a+b|}{1+|a+b|}\\leq \\frac{|a|}{1+|a|}+\\frac{|b|}{1+|b|}$.",
+    "formal": "theorem formal_2989\n  (a b : ℝ) :\n  abs (a + b) / (1 + abs (a + b)) ≤ abs a / (1 + abs a) + abs b / (1 + abs b) := by\n  sorry",
+    "name": "algebra_absapbon1pabsapbleqsumabsaon1pabsa"
+  },
+  {
+    "id": "formal_3097",
+    "natural": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $\\frac{3}{\\sqrt{2}} \\leq \\frac{a}{\\sqrt{a+b}} + \\frac{b}{\\sqrt{b+c}} + \\frac{c}{\\sqrt{c+a}}$.",
+    "formal": "theorem formal_3097\n  (a b c : ℝ)\n  (h₀ : 0 < a)\n  (h₁ : 0 < b)\n  (h₂ : 0 < c)\n  (h₃ : 3 ≤ a * b + b * c + c * a) :\n  3 / Real.sqrt 2 ≤ a / Real.sqrt (a + b) + b / Real.sqrt (b + c) + c / Real.sqrt (c + a) := by\n  sorry",
+    "name": "algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2"
+  },
+  {
+    "id": "formal_2980",
+    "natural": "Show that if $n$ is a positive integer and $2^n - 1$ is prime, then $n$ is prime.",
+    "formal": "theorem formal_2980\n  (n : ℕ) (h : 0 < n) :\n  (Nat.Prime (2^n - 1)) → Nat.Prime n := by\n  sorry",
+    "name": "numbertheory_2pownm1prime_nprime"
+  },
+  {
+    "id": "formal_3142",
+    "natural": "A positive integer $n$ is nice if there is a positive integer $m$ with exactly four positive divisors (including $1$ and $m$) such that the sum of the four divisors is equal to $n$. Show that the sum of all the nice numbers in the set $\\{ 2010,2011,2012,\\dots,2019 \\}$ is 2016.",
+    "formal": "theorem formal_3142\n  (Nice : ℕ → Prop)\n  (h₀ : ∀ n, Nice n ↔ ∃ m > 0, m.divisors.card = 4 ∧ ∑ d in m.divisors, d = n) :\n  ∑ n in (Finset.Icc 2010 2019).filter Nice, n = 2016 := by\n  sorry",
+    "name": "mathd_numbertheory_451"
+  },
+  {
+    "id": "formal_3382",
+    "natural": "Let $d(n)$ denote the number of positive integers that divide $n$, including $1$ and $n$. For example, $d(1)=1$, $d(2)=2$, and $d(12)=6$. (This function is known as the divisor function.) Let $f(n)=\\frac{d(n)}{n^{1/3}}$. There is a unique positive integer $N$ such that $f(N)>f(n)$ for all positive integers $n\\ne N$. Show that the sum of the digits of $N$ is 9.",
+    "formal": "theorem formal_3382\n  (f : ℕ → ℝ)\n  (h₀ : ∀ n, f n = (n.divisors.card : ℝ) / n^(1 / 3 : ℝ))\n  (N : ℕ)\n  (hN : ∀ n ≠ N, f N > f n) :\n  (N.digits 10).sum = 9 := by\n  sorry",
+    "name": "amc12a_2021_p25"
+  },
+  {
+    "id": "formal_3412",
+    "natural": "Show that the remainder of 194 (mod 11) is 7.",
+    "formal": "theorem formal_3412 : 194 % 11 = 7 := by\n  sorry",
+    "name": "mathd_numbertheory_66"
+  },
+  {
+    "id": "formal_3035",
+    "natural": "If $f(x) = x + 1$ and $g(x) = x^2 + 3$, show that $f(g(2))=8$.",
+    "formal": "theorem formal_3035 (f g : ℝ → ℝ) (hf : f = fun x ↦ x + 1) (hg : g = fun x ↦ x ^ 2 + 3) : f (g 2) = 8 := by\n  sorry",
+    "name": "mathd_algebra_143"
+  },
+  {
+    "id": "formal_3315",
+    "natural": "Show that the value of $\\frac{\\log_2 80}{\\log_{40} 2} - \\frac{\\log_2 160}{\\log_{20}2}?$ is 2.",
+    "formal": "theorem formal_3315 : \n  (Real.logb 2 80 / Real.logb 40 2) - (Real.logb 2 160 / Real.logb 20 2) = 2 := by\n  sorry",
+    "name": "amc12b_2021_p9"
+  },
+  {
+    "id": "formal_3080",
+    "natural": "Show that the remainder of $54 (mod 6)$ is $0$.",
+    "formal": "theorem formal_3080 : 54 % 6 = 0 := by\n  sorry",
+    "name": "mathd_numbertheory_342"
+  },
+  {
+    "id": "formal_2934",
+    "natural": "When a number is divided by 5, the remainder is 3. Show that the remainder is 1 when twice the number is divided by 5.",
+    "formal": "theorem formal_2934\n  (n : ℕ)\n  (h₀ : n % 5 = 3) :\n  (2 * n) % 5 = 1 := by\n  sorry",
+    "name": "mathd_numbertheory_185"
+  }
+]
