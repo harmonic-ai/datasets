@@ -1,7 +1,7 @@
 # MiniF2F
 
-## More coming soon...
-We have released our validation set, which was used to obtain the results reported in our [second blog post](https://www.harmonic.fun/news#blog-post-2-link). We are planning on releasing the train and test set soon.
+## Related Results
+The results reported in our [second blog post](https://www.harmonic.fun/news#blog-post-2-link) are based on the validation set of this dataset.
 
 ## Our Improvements to MiniF2F
 To accurately assess our system's capabilities, we have made several improvements to MiniF2F:
@@ -12,6 +12,13 @@ To accurately assess our system's capabilities, we have made several improvement
 4. We fixed many incorrect formalizations, including several theorem statements that became trivial or impossible in their original Lean encodings.
 
 We began with formal statements released by the [Hoskinson Center](https://huggingface.co/datasets/hoskinson-center/minif2f-lean4), themselves derived from [Facebook Research’s fork](https://github.com/facebookresearch/miniF2F) which fixed several issues with the [original benchmark](https://github.com/openai/miniF2).
+
+## Known Issues
+
+- There are 3 problems missing from the training set (`mathd_algebra_31`, `mathd_numbertheory_24`, `amc12a_2020_p22`)
+
+## Contributions
+We welcome PRs to update or correct issues discovered.
 
 ## MiniF2F
 
